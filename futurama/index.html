@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Do You Futurama?</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<!-- MODAL -->
+<div id="getNameModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">What's your name?</h3>
+      </div>
+      <div class="modal-body">
+              <form action="#" class="modal-form" method="post">
+      		<div class="form-group">
+      			<input type="text" id="name" name="name" placeholder="name" class="form-control">
+      		</div>
+      		<button id="play" class="btn btn-primary" type="submit">Play</button>
+      </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	<div class="container">
+		<div class="row content">
+			<div class="col-xs-12 col-md-4">
+				<img id="logo" class="center-block img-responsive" src="img/futuramabannerxs.png" alt="futurama charachters">
+				</div>
+				<div class="col-xs-12 col-md-8" id="title">
+
+				<img class="center-block img-responsive" src="img/getquizzy2.png" alt="futurama charachters">
+
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<div id="userInfo">
+					<h2>Hello, <span id="userName"></span></h2>
+					<p>You're on question <span id="currentQuestionNumber"></span> of <span id="totalQuestions"></span>.</p>
+					<p>You have answered <span id="userScore"></span> correctly</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-8">
+				<div id="questionBlock">
+					<div id="questionArea">
+						<h2 id="questionDisplay">QUESTION</h2>
+						<div id="possibleAnswersDisplay" class="clearfix">						
+						</div>
+			        </div>
+
+					<a href="#" id="finalAnswer" class="btn btn-block btn-primary">FINAL ANSWER</a>
+					<a href="#" id="questionBtn" class="btn btn-block btn-primary hidden">NEXT</a>
+					<a href="#" id="resetBtn" class="btn btn-block btn-primary hidden">PLAY AGAIN</a>
+
+		        </div>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
